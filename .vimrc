@@ -38,6 +38,9 @@ vnoremap > >gv
 vnoremap < <gv
 nnoremap gp `[v`]
 
+" Ctrl+R then %s//<text-to-replace>
+vnoremap <c-r> y<ESC>/<c-r>"<CR>   
+
 " Autocommands
 " Source vimrc automatically
 augroup myvimrc
