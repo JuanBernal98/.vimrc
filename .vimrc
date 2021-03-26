@@ -38,8 +38,8 @@ vnoremap > >gv
 vnoremap < <gv
 nnoremap gp `[v`]
 
-" Ctrl+R then %s//<text-to-replace>
-vnoremap <c-r> y<ESC>/<c-r>"<CR>   
+" Ctrl+C to search and replace highlighted text
+vnoremap <C-c> "hy:%s/<C-r>h//g<left><left>
 
 " Autocommands
 " Source vimrc automatically
